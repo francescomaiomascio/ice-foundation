@@ -1,105 +1,44 @@
 # ICE Foundation — Axiomatic System Design
 
-[![Status](https://img.shields.io/badge/status-foundational%20research-6B7280?style=flat)](#)
-[![Scope](https://img.shields.io/badge/scope-axioms%20%26%20invariants-111827?style=flat)](#)
-[![Docs](https://img.shields.io/badge/docs-ICE%20Documentation-8FB9FF?style=flat)](https://francescomaiomascio.github.io/ice-docs/)
+ICE Foundation defines the axiomatic layer of the ICE ecosystem.
 
----
+Its purpose is not to describe implementations, components, or workflows, but to establish the non-negotiable assumptions under which any ICE-compliant system is allowed to exist. Everything built within ICE—runtimes, engines, orchestration layers, and execution environments—is constrained by what is defined here.
 
-## What this repository is
+ICE Foundation answers a single class of questions: what must *always* be true for intelligent systems to remain governable, inspectable, and coherent over time.
 
-This repository defines the **axiomatic foundations** of the ICE ecosystem.
-
-ICE Foundation does not describe *how* systems are implemented.
-It defines **what must be true** for an ICE-compliant system to exist at all.
-
-The content here establishes:
-- non-negotiable invariants
-- execution assumptions
-- architectural constraints that all other ICE components must obey
-
-These foundations are **systemic**, not stylistic.
-
----
+This repository formalizes those answers.
 
 ## Scope
 
-ICE Foundation is concerned with:
+ICE Foundation is concerned with execution as a system property rather than a byproduct of inference. It treats authority, control, and state evolution as explicit architectural concerns, not emergent behavior.
 
-- execution as a first-class concept  
-- authority and control as explicit system properties  
-- state as a derived, inspectable artifact  
-- separation between inference and governance  
-- observability as a structural requirement  
+Within this scope, the foundation defines how execution is authorized, how state is derived and validated, how side effects are constrained, and how observability is guaranteed as systems grow in complexity and duration. These concerns are addressed independently of language, framework, or deployment model.
 
-It operates **above implementation**, but **below architecture**.
+The level of abstraction is intentionally below architecture design choices and above concrete implementation details.
 
----
+## Nature of the repository
 
-## What this repository is not
+ICE Foundation is not a framework, runtime, engine, or API surface. It contains no executable code by design.
 
-ICE Foundation is **not**:
-
-- a framework
-- a runtime
-- an engine
-- a set of APIs
-- a reference implementation
-
-No code lives here by design.
-
-This repository exists to prevent architectural drift as systems evolve.
-
----
+Its role is to prevent architectural ambiguity and long-term drift by fixing the semantic ground on which all other ICE components operate. The material in this repository is normative: it defines constraints, not suggestions.
 
 ## Core assumptions
 
-ICE systems assume that:
+ICE systems assume that intelligence does not imply authority, inference does not imply action, and state cannot be treated as opaque or implicit. Any system that acts over time must be able to explain its behavior after the fact, survive partial failure, and remain intelligible as context accumulates.
 
-- intelligence does not imply authority  
-- inference does not imply action  
-- state must be explainable after the fact  
-- long-running systems must survive failure  
-- execution must remain intelligible over time  
+These assumptions are treated as axioms. They are not optimized away, negotiated, or conditionally applied.
 
-These assumptions are treated as **axioms**, not preferences.
+## Position in the ICE ecosystem
 
----
+ICE Foundation constrains the entire ecosystem.
 
-## Relationship to the ICE ecosystem
+Runtimes enforce these axioms at execution time. Engines operate within them. Orchestration layers coordinate behavior without bypassing them. Agents and models are always subordinate to the authority model defined here.
 
-ICE Foundation constrains all other ICE components.
-
-- `ice-runtime` must enforce these invariants  
-- `ice-engine` must operate within them  
-- orchestration layers must not bypass them  
-- agents and models are subordinate to them  
-
-Dependencies flow **one way only**:
-from foundation to implementation.
-
----
+Dependencies flow in one direction only: from foundation to implementation.
 
 ## Documentation
 
-This repository is complemented by:
+This repository is complemented by the canonical ICE documentation and RFCs, which expand and formalize the concepts introduced here.
 
-📘 ICE Documentation & RFCs  
 https://francescomaiomascio.github.io/ice-docs/  
 https://github.com/francescomaiomascio/ice-docs
-
----
-
-## Support
-
-ICE Foundation is part of an independent, long-term research effort.
-
-If you are interested in:
-- execution-level system design  
-- governance of intelligent systems  
-- runtime-centric AI architectures  
-
-you can support the work here:
-
-- GitHub Sponsors  
-  https://github.com/sponsors/francescomaiomascio
