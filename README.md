@@ -41,4 +41,3 @@ Dependencies flow in one direction only: from foundation to implementation.
 This repository is complemented by the canonical ICE documentation and RFCs, which expand and formalize the concepts introduced here.
 
 https://francescomaiomascio.github.io/ice-docs/  
-https://github.com/francescomaiomascio/ice-docs
