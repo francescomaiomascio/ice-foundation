@@ -50,7 +50,7 @@ In ICE:
 Inference does not authorize execution.
 Execution constrains inference.
 
-Any system where inference directly causes execution violates this axiom.
+Any system in which inference alone is sufficient to cause execution is invalid by definition.
 
 ---
 
@@ -83,25 +83,11 @@ Without execution, responsibility cannot exist.
 
 ---
 
-## Systemic Consequences
-
-Treating execution as a first principle implies:
-
-- authority must be explicit
-- inference and control must be separated
-- state must be derivable from execution
-- failure must be representable
-- governance must constrain execution, not override it
-
-All runtime, engine, and orchestration designs must comply with this axiom.
-
----
-
 ## Canonical Status
 
 This document defines a canonical axiom of ICE.
 
-Any component, repository, or design that contradicts the principles defined here is incompatible with ICE by definition.
+Any conceptual model or system interpretation that contradicts the principles defined here is incompatible with ICE by definition.
 
 ---
 
@@ -115,4 +101,4 @@ This document does not define:
 - orchestration strategies
 - enforcement logic
 
-Those are addressed in downstream projects and must remain consistent with this axiom.
+Those are addressed in downstream projects and must remain semantically consistent with this axiom.
