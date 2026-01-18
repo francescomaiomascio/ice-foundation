@@ -1,16 +1,20 @@
-# ICE Foundation  
+# ICE Foundation
 ## Axiomatic Authority of the ICE Ecosystem
 
-ICE Foundation defines the **axiomatic and invariant layer** of the ICE ecosystem.
+ICE Foundation defines the **axiomatic and invariant layer** of ICE.
 
-It establishes the **non-negotiable truths** under which any ICE-compliant system
-is allowed to exist, execute, and evolve over time.
+It establishes the **non-negotiable conditions** under which any ICE-based system
+is allowed to exist, execute, adapt, or evolve.
 
 ICE Foundation does not describe systems.  
-It defines the **conditions of validity** for systems.
+It defines **when systems are valid**.
 
 Everything built in ICE — runtimes, engines, intelligence layers,
-interfaces, and orchestration — is constrained by what is defined here.
+interfaces, orchestration, products —
+**operates under the constraints defined here**.
+
+If something violates this layer, it is not “experimental”.  
+It is **wrong by definition**.
 
 ---
 
@@ -19,14 +23,18 @@ interfaces, and orchestration — is constrained by what is defined here.
 ICE Foundation is:
 
 - an **axiomatic system**
-- a **conceptual authority**
-- a **structural constraint layer**
-- the **root of epistemic legitimacy** in ICE
+- a **source of structural truth**
+- a **hard constraint layer**
+- the **root of legitimacy** in ICE
 
-It answers a single class of questions:
+It answers one question only:
 
-> What must always be true for intelligent systems  
-> to remain governable, inspectable, and meaningful over time?
+> What must *always* be true  
+> for intelligent systems to remain governable, inspectable,  
+> and meaningful over time?
+
+If you are not asking this question,  
+you do not need ICE.
 
 ---
 
@@ -36,13 +44,16 @@ ICE Foundation is **not**:
 
 - a runtime
 - an engine
-- an architecture
 - a framework
 - an API
+- a reference implementation
 - a specification of behavior
-- a description of implementation
+- a set of best practices
 
 It contains **no executable code by design**.
+
+Execution without axioms scales chaos.
+ICE refuses that premise.
 
 ---
 
@@ -51,16 +62,16 @@ It contains **no executable code by design**.
 ICE Foundation defines:
 
 - **Axioms**  
-  Foundational assumptions that are taken as true and never negotiated.
+  Truths that are assumed, not negotiated.
 
 - **Structural Invariants**  
-  Properties that must never be violated by any ICE system.
+  Properties that must never be violated.
 
 - **Conceptual Boundaries**  
-  Explicit limits of Foundation authority and downstream responsibility.
+  Explicit limits of responsibility between domains.
 
-ICE Foundation defines **what is valid**,  
-not **how validity is enforced**.
+ICE Foundation defines **what is allowed to be true**,  
+not how truth is enforced.
 
 ---
 
@@ -70,49 +81,31 @@ Authority flows in one direction only:
 
 **Foundation → Runtime → Engine → Intelligence → Interfaces**
 
-- Runtimes enforce axioms and invariants
-- Engines operate within invariant constraints
-- Intelligence proposes intent but holds no authority
+- Runtime enforces invariants
+- Engines operate inside constraints
+- Intelligence proposes intent without authority
 - Interfaces expose behavior without redefining meaning
 
-No downstream domain may reinterpret, extend,
-or weaken the Foundation by implication.
-
----
-
-## Nature of This Repository
-
-This repository is **normative**.
-
-All content here is authoritative with respect to:
-
-- epistemic truth
-- system legitimacy
-- invariant compliance
-
-If any documentation, implementation, or system behavior
-contradicts this repository, **it is incorrect by definition**.
+No downstream layer may reinterpret this hierarchy.
 
 ---
 
 ## Canonical Status
 
-ICE Foundation is the **root authority** of the ICE ecosystem.
+This repository is **normative**.
 
-Compliance with ICE is impossible without compliance with this repository.
+If documentation, implementation, or behavior
+contradicts ICE Foundation,
+**the contradiction is an error**.
 
-This is not a design choice.  
-It is a structural requirement.
+ICE compliance starts here.
+There is no shortcut.
 
 ---
 
 ## Notes
 
-ICE Foundation does not evolve quickly.
+ICE Foundation evolves slowly.
 
-Change here is rare, deliberate, and system-wide in impact.
-
-This is intentional.
-
-Stability at the foundation  
-is what allows intelligence, systems, and products to evolve safely.
+That is not conservatism.  
+It is how you prevent intelligent systems from rotting.
