@@ -1,15 +1,30 @@
-# Boundary: Foundation → Observability
+# Boundary: Foundation ↔ Observability
 
 ## Purpose
 
-Define the boundary between the **ICE Foundation** and the **ICE Observability** domain.
+Define and formalize the **conceptual boundary** between the **ICE Foundation**
+and the **Observability** domain.
 
-This document establishes what the Foundation constrains with respect to
-visibility, inspection, and accountability of system behavior,
-and what it explicitly does **not** measure, collect, or visualize.
+This document establishes that **measurement, inspection, and visibility**
+do not possess conceptual authority and must never redefine
+foundational truth, validity, or system meaning.
 
-The goal is to prevent observability concerns from redefining
-conceptual authority or system truth.
+The goal is to preserve a strict separation between
+**what must be true** and **how behavior is observed**.
+
+---
+
+## Foundational Position
+
+The ICE Foundation is **pre-observational**.
+
+It defines:
+
+- Axioms that establish conceptual truth
+- Structural invariants that constrain validity
+- Requirements for traceability, determinism, and governance
+
+The Foundation does **not** measure systems.
 
 ---
 
@@ -17,73 +32,77 @@ conceptual authority or system truth.
 
 The ICE Foundation:
 
-- Defines axioms and structural invariants
-- Requires traceability, determinism, and governance
-- Establishes what *must be explainable* and *reconstructable*
-- Defines the semantic meaning of accountability
+- Defines **what must be explainable and attributable**
+- Establishes **semantic meaning of accountability**
+- Constrains **what must remain traceable in principle**
+- Defines validity independently of visibility
 
-The Foundation defines **what must be observable in principle**,  
-not **how it is observed in practice**.
+The Foundation defines **truth**, not signals.
 
 ---
 
 ## Role of Observability
 
-Observability:
+The Observability domain:
 
-- Collects signals, metrics, traces, and events
+- Collects metrics, logs, traces, and events
 - Exposes system behavior for inspection and analysis
-- Supports debugging, audit, and system understanding
+- Supports debugging, auditing, and diagnosis
 - Implements tooling for visibility over time
 
-Observability answers **what happened and when**,  
+Observability answers **what was seen and when**,
 never **what is valid** or **what is allowed**.
 
 ---
 
 ## Explicit Non-Responsibilities of the Foundation
 
-The Foundation does NOT define:
+The ICE Foundation does **not** define, imply, or govern:
 
-- Metrics, logs, or tracing formats
-- Telemetry pipelines or storage backends
-- Dashboards or visualization tools
-- Sampling strategies or retention policies
+- Metrics or logging formats
+- Tracing schemas or correlation identifiers
+- Telemetry pipelines or transport mechanisms
+- Storage, retention, or sampling strategies
+- Dashboards or visualization techniques
 - Alerting rules or thresholds
-- Debugging workflows
+- Debugging or monitoring workflows
 
-All such concerns belong exclusively to Observability.
+All such concerns belong exclusively to Observability design.
 
 ---
 
 ## Constraint Relationship
 
-- The Foundation constrains **what must remain traceable**
-- Observability exposes traces and signals
-- Observability may be partial or degraded
-- The Foundation must remain conceptually intact
+The relationship is asymmetric:
 
-If observability data is missing or incorrect,
+- The Foundation constrains **semantic accountability**
+- Observability reflects **observable behavior**
+
+Observability may be partial, degraded, or unavailable.
+The Foundation remains conceptually intact.
+
+If observability data is incomplete or incorrect,
 the observability system is faulty — not the Foundation.
 
 ---
 
-## Invalid Boundary Violations
+## Boundary Violations
 
-The following are invalid:
+The following constitute **boundary violations**:
 
-- Treating metrics as authority
+- Treating metrics or dashboards as authority
 - Using observability signals to redefine invariants
 - Encoding monitoring assumptions into axioms
 - Allowing visibility tooling to alter system truth
+- Equating visibility with validity
 
-Such actions constitute a boundary violation.
+Such violations invalidate ICE compliance.
 
 ---
 
 ## Canonical Status
 
-This boundary is authoritative.
+This boundary definition is **canonical and authoritative**.
 
 Any observability subsystem claiming ICE compliance
 must demonstrate that it reflects system behavior
